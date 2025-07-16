@@ -31,26 +31,27 @@ A virtual environment (recommended)
 2. Setup
 First, clone the repository and set up a virtual environment:
 
-# Clone the repository
+### Clone the repository
 git clone <your-repo-url>
 cd <your-repo-name>
 
-# Create and activate a virtual environment
+### Create and activate a virtual environment
 python -m venv venv
-# On Windows:
+#### On Windows:
 .\venv\Scripts\Activate
-# On macOS/Linux:
+#### On macOS/Linux:
 source venv/bin/activate
 
 3. Execute the Scoring Script
 Run the script from your terminal, providing the path to the input JSON file.
 
---- Example usage:
---- python score_wallets.py path/to/user-transactions.json
+Example usage:
+
+ python score_wallets.py path/to/user-transactions.json
 
 The script will process the data and save the results to a file named wallet_scores.csv by default.
 
 To specify a different output file, use the -o flag:
 
---- python score_wallets.py path/to/user-transactions.json -o my_scores.csv
+python score_wallets.py path/to/user-transactions.json -o my_scores.csv
 
